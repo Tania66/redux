@@ -7,6 +7,7 @@ const todosSlice = createSlice({
 
   reducers: {
     addTodo(state, { payload }) {
+      console.log('payload :>> ', payload);
       state.items.push(payload);
     },
     deleteTodo(state, { payload }) {
